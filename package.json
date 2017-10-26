@@ -17,8 +17,9 @@
   },
   "homepage": "https://github.com/kerenarielle/ramos-automoveis#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
-    "gulp-compass": "^2.1.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
   }
 }
