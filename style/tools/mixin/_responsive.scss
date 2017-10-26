@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+/// Mixin para facilitar a criação e utilização de media queries
+/// Baseado no mixin de [Hugo Giraudel](https://www.sitepoint.com/managing-responsive-breakpoints-sass/)
+///
+/// @group    Tools
+/// @require  {variable} $breakpoints
+///
+/// @output   Quando compilado coloca todas as propriedades que tem dentro
+///           do mixin na media querie selecionada como parametro
+///
+/// @param    {string} $breakpoint             - Chave do tamanho desejado
+///
+/// @example scss - Uso
+///   @include responsive(medium) {
+///     background: blue;
+///     width: 50px;
+///   }
+///
+/// @example css - Compilado
+///    @media (min-width: 68rem) {
+///      body {
+///        background: blue;
+///        width: 50px;
+///      }
+///    }
+@mixin responsive($breakpoint) {
+  @if variable-exists(breakpoints) {
+    @media (min-width: em(map-get($breakpoints, $breakpoint))) {
+      @content;
+    }
+  } @else {
+    @warn 'O mapa $breakpoints não existe';
+  }
+}

@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+/// Arruma bug do float onde o elemento pai não pega a altura corretamente
+/// @group   Objetos
+///
+/// @example scss - Uso
+///   .element {
+///     @extend %clearfix;
+///   }
+///
+/// @example scss - Compilado
+///   .element:after {
+///     content: '';
+///     display: table;
+///     clear: both;
+///   }
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
