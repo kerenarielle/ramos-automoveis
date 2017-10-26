@@ -1,0 +1,91 @@
+@charset 'UTF-8';
+
+
+$colors: (
+  gray: (
+    extra-light: #fff,
+    light: #737b82,
+    base: #898989,
+    dark: #33373a
+  ),
+
+  green: (
+    base: #1bd41b
+  ),
+
+  red: (
+    light: #fe7a78,
+    base: #fe4b47
+  )
+
+) !default;
+
+/// Lista de fontes para fallback
+/// @group    Fontes
+$font-fallback: Tahoma, Verdana, Segoe, sans-serif !default;
+
+/// Mapa para configuração de fontes
+/// Pode ser configurado para utilizar font-faces ou para fontes de sistema
+/// como "Arial", "Helvetica", "Tahoma", etc
+/// Se for utilizar fontes de sistema, precisa setar o `path` como `null`
+///
+/// @group    Fontes
+
+$font-config: (
+  base: (
+    name: interfaceRegular,
+    path: '../fonts/regular/interface-webfont',
+    weight: null
+  ),
+  bold: (
+    name: interfaceBold,
+    path: '../fonts/bold/interface-bold-webfont',
+    weight: null
+  ),
+  light: (
+    name: interfaceLight,
+    path: '../fonts/light/interface-light-webfont',
+    weight: null
+  ),
+  thin: (
+    name: interfaceThin,
+    path: '../fonts/thin/interface-thin-webfont',
+    weight: null
+  )
+) !default;
+
+/// Mapa dos tamanhos de fontes utilizadas
+/// @group    Fontes
+$font-sizes: (
+  xxbig: 24px,
+  xbig: 20px,
+  big: 18px,
+  medium: 16px,
+  small: 14px,
+  xsmall: 13px,
+  xxsmall: 12px
+) !default;
+
+/// Mapa dos tamanhos para as media queries
+/// @group    Breakpoints
+$breakpoints: (
+  small   : 592px,
+  medium  : 768px,
+  large   : 1088px,
+  xlarge  : 1312px,
+  xxlarge : 1600px
+) !default;
+
+
+///Mapa dos tamanhos de espaçamentos
+///@group Spaces
+
+$spaces: (
+  p    : 5px,
+  base : 10px,
+  m    : 20px,
+  g    : 30px,
+  gg   : 40px,
+  xg   : 50px
+) !default;
+
