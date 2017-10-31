@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+
+%button-config {
+  margin-top: 20px;
+  height: rem(40);
+  width: 100%;
+  border: 1px solid color(gray, light);
+  background: color(gray, hiper-dark);
+  color: color(gray, lighter);
+  font-weight: bold;
+}
