@@ -1,0 +1,13 @@
+h2 {
+  @include font(bold);
+
+  font-size: font-size(xxbig);
+  margin-bottom: space(m);
+}
+
+h3 {
+  @include font(bold);
+
+  font-size: font-size(xbig);
+  margin-bottom: space(base);
+}

@@ -2,7 +2,13 @@
 
 body {
   position: relative;
-  background-color: color(gray, extra-light);
+  background-color: color(gray, lighter);
   color: color(gray);
   line-height: 1.2;
+  font-size: font-size(medium);
+  @include font(base);
+}
+
+h2 {
+  @include font(bold);
 }

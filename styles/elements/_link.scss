@@ -1,0 +1,5 @@
+a {
+  @include font(bold);
+  font-size: font-size(medium);
+  color: color(gray);
+}

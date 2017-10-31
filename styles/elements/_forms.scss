@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+input,
+textarea {
+  @extend %form-config;
+
+  width: 100%
+}
+
+textarea {
+  height: rem(200);
+}
