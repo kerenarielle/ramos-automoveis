@@ -1,5 +1,8 @@
 @charset 'UTF-8';
 
+// // @section generic
+@import 'generic/_reset';
+
 // // @section  Tools [ferramentas]
 @import 'tools/functions/_clear-unit';
 @import 'tools/functions/_converters';
@@ -12,12 +15,30 @@
 @import 'tools/mixin/_column';
 @import 'tools/mixin/_font';
 @import 'tools/mixin/_responsive';
+@import 'tools/placeholders/_clearfix';
 
 // // @section config
 @import '_config';
 
-// // @section generic
-@import 'generic/_reset';
+// @section Placeholders
+@import 'tools/placeholders/_hidding-text';
+@import 'tools/placeholders/_button';
+@import 'tools/placeholders/_form';
+
 
 // @section elements
 @import 'elements/_body';
+@import 'elements/_header';
+@import 'elements/_titles';
+@import 'elements/_paragraph';
+@import 'elements/_forms';
+@import 'elements/_button';
+@import 'elements/_link';
+
+// @section components
+@import 'components/_container';
+@import 'components/_section';
+@import 'components/_destaque';
+
+// @section page
+@import 'page/_index';

@@ -3,10 +3,12 @@
 
 $colors: (
   gray: (
-    extra-light: #fff,
-    light: #737b82,
+    lighter: #fff,
+    extra-light: #ededed,
+    light: #c7c7c7,
     base: #898989,
-    dark: #33373a
+    dark: #33373a,
+    hiper-dark: #000
   ),
 
   green: (
@@ -34,22 +36,22 @@ $font-fallback: Tahoma, Verdana, Segoe, sans-serif !default;
 $font-config: (
   base: (
     name: interfaceRegular,
-    path: '../fonts/regular/interface-webfont',
+    src: '../fonts/regular/interface-webfont',
     weight: null
   ),
   bold: (
     name: interfaceBold,
-    path: '../fonts/bold/interface-bold-webfont',
+    src: '../fonts/bold/interface-bold-webfont',
     weight: null
   ),
   light: (
     name: interfaceLight,
-    path: '../fonts/light/interface-light-webfont',
+    src: '../fonts/light/interface-light-webfont',
     weight: null
   ),
   thin: (
     name: interfaceThin,
-    path: '../fonts/thin/interface-thin-webfont',
+    src: '../fonts/thin/interface-thin-webfont',
     weight: null
   )
 ) !default;

@@ -1,0 +1,9 @@
+.facebook {
+  @extend %hidding-text;
+  background-image: url(../../image/svg/facebook.png);
+  background-repeat: no-repeat;
+
+  display: block;
+  background-size: 30px;
+  height: 30px;
+}
