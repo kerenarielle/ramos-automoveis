@@ -1,0 +1,7 @@
+.container {
+  @extend %clearfix;
+
+  padding: space(0, base);
+  margin: 0 auto;
+
+}

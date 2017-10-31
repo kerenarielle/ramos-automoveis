@@ -1,0 +1,18 @@
+.destaque {
+  background-image: url(../../image/ferrari.png);
+  background-size: cover;
+  height: 250px;
+  display: table;
+
+  div {
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    vertical-align: middle;
+    display: table-cell;
+
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
